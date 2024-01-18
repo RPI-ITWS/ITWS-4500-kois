@@ -1,0 +1,1 @@
+When I designed every five news to be one page, it had big bug, it would add five news resulting in having 10 news to one page, I wasn't sure where the problem was, so I changed the logic and put before deletion Five news was changed to delete all news and display the next five, which solved the problem and greatly increased the smoothness of the program.
