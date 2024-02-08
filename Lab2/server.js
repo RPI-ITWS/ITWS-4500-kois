@@ -15,7 +15,7 @@ app.get('/api/articles', (req, res) => {
             return;
         }
         let articles = JSON.parse(data).articles;
-        res.json(paginatedArticles);
+        res.json(articles);
     });
 });
 
@@ -34,7 +34,7 @@ app.get('/api/articles/news', (req, res) => {
         const endIndex = startIndex + parseInt(pageSize);
         const paginatedArticles = articles.slice(startIndex, endIndex);
 
-        res.json(paginatedArticles);
+        res.json(articles);
     });
 });
 
