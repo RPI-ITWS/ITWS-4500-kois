@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body id="body1">
+
+    <div class="news-ticker" id="news-ticker"></div>
+    <div id="left">
+        <form id="addArticleForm">
+            <input type="text" id="articleTitle" placeholder="Title" required>
+            <textarea id="articleDescription" placeholder="Description" required></textarea>
+            <button type="submit">Add Article</button>
+        </form>
+        <input type="text" id="searchTitle" placeholder="Enter news title">
+        <button onclick="fetchSpecificNews()">Search</button>
+        <label for="article-id">ID:</label>
+        <input type="text" id="article-id" name="article-id">
+        <button onclick="deleteArticleFromInput()">Delete</button>
+        <div id="searchResults"></div>
+
+
+    </div>
+    <div id="right">
+        <div id="news-container"></div>
+        <div class="pagination-buttons">
+            <button id="prev-button" class="pagination-button" style="display: none;">Prev</button>
+            <br>
+            <button id="next-button" class="pagination-button">Next</button>
+        </div>
+        
+    </div>
+    <div id="right-right">
+        <div id="weather-search">
+            <input type="text" id="cityName" placeholder="Enter city name">
+            <button id="fetchWeatherButton">Get Weather</button>
+        </div>
+        <div id="weather-map"></div>
+        <div id="map" style="height: 200px;"></div> 
+        <button id="deleteAllHistory">Delete All History</button>
+        <a href="history.html" class="button-link">Check History</a>
+
+
+    </div>
+    <script src="lab2.js"></script>
+    <script src="map/lab3.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap6hHqVZtXGgmTgYXdUcYMtvucDmH7nY&callback=initMap"></script>
+
+</body>
+</html>
