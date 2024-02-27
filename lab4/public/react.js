@@ -5,8 +5,8 @@ function LikeButton() {
   const [liked, setLiked] = React.useState(false);
 
   const handleClick = () => {
-    setLikes(likes + 1); // 增加点赞次数
-    setLiked(true); // 更新为已点赞状态
+    setLikes(likes + 1); 
+    setLiked(true); 
   };
 
   const buttonText = liked ? `Liked (${likes})` : `Like (${likes})`;
