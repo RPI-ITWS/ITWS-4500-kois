@@ -1,0 +1,49 @@
+body#body1 {
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "ticker ticker ticker"
+        "left right right-right";
+    grid-template-columns: 30% 30% 40%;
+    grid-gap: 20px;
+}
+
+#left {
+    grid-area: left;
+    margin: 10px;
+}
+
+#right {
+    grid-area: right;
+    margin: 10px;
+}
+
+#right-right {
+    grid-area: right-right;
+    margin: 10px;
+}
+
+#message {
+    background-color: blanchedalmond;
+    margin: 20px;
+}
+
+#activity{
+    background-color: bisque;
+    margin: 20px;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#OO{
+    background-color:rgb(107, 106, 105);
+    margin: 20px;
+}
