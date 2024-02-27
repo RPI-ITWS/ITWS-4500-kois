@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "id": "b51d4289-e79f-45a1-95a8-acefd0aa24de",
+      "cityName": "Troy",
+      "country": "US",
+      "weather": "Clouds",
+      "temperature": "27.03°F",
+      "description": "overcast clouds",
+      "timestamp": "2024-02-24T02:11:18.965Z",
+      "coord": {
+        "lon": -83.1499,
+        "lat": 42.6056
+      }
+    },
+    {
+      "id": "35f25514-10c2-4917-9a03-4dd7120163ad",
+      "cityName": "Troy",
+      "country": "US",
+      "weather": "Clear",
+      "temperature": "43.45°F",
+      "description": "clear sky",
+      "timestamp": "2024-02-27T01:52:37.565Z",
+      "coord": {
+        "lon": -83.1499,
+        "lat": 42.6056
+      }
+    },
+    {
+      "id": "b61bf1dd-98a5-471c-8c6b-2e337167aa3a",
+      "cityName": "Troy",
+      "country": "US",
+      "weather": "Clear",
+      "temperature": "43.45°F",
+      "description": "clear sky",
+      "timestamp": "2024-02-27T01:52:37.738Z",
+      "coord": {
+        "lon": -83.1499,
+        "lat": 42.6056
+      }
+    }
+  ]
+}

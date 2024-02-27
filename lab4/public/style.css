@@ -1,0 +1,116 @@
+body#body1 {
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "ticker ticker ticker"
+        "left right right-right";
+    grid-template-columns: 30% 30% 40%;
+    grid-gap: 20px;
+}
+
+.news-ticker {
+    grid-area: ticker;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+#left {
+    grid-area: left;
+    margin: 10px;
+}
+
+#right {
+    grid-area: right;
+    margin: 10px;
+}
+
+#right-right {
+    grid-area: right-right;
+    margin: 10px;
+}
+
+form#addArticleForm, #searchResults, input[type="text"], textarea, button {
+    display: block;
+    width: 100%;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.news-ticker p {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-button {
+    margin-right: 5px;
+}
+
+#articlesContainer {
+    margin: 20px;
+}
+.article {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/*Lab 3*/
+.button-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
