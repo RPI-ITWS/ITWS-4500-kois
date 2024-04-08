@@ -1,0 +1,1 @@
+This uses the D3.js library to draw a bar chart that shows the number of publications for a set of articles in different months. The interface developed through React allows users to change the color of the bar chart with the click of a button, adding to the creativity. The data uses the news api that I have been using, and I downloaded it locally for convenience.
